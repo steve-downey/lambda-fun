@@ -1,10 +1,10 @@
-#include <scratch/scratch.h>
+#include <lambda_fun/lambda_fun.h>
 
 #include <iostream>
 
 int main(int /*argc*/, char** /*argv*/)
 {
-    using namespace scratch;
+    using namespace lambda_fun;
 
 
 }

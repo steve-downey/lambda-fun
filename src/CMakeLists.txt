@@ -1,2 +1,2 @@
-add_subdirectory(scratch)
+add_subdirectory(lambda_fun)
 add_subdirectory(examples)

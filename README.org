@@ -14,14 +14,12 @@
 
 [[https://github.com/steve-downey/scratch/actions/workflows/ci.yml/badge.svg]]
 
-* A Base 'scratch' template repository
+* Fun with Lambda in C++
+** Booleans in the Church or Scott Encoding
 
-Scratch work
 
-The repository is also my work on, if not 'best', at least good practices with CMake and emerging consensus on file and directory layout.
-
-* CMake Workflow -- targets.mk
-The targets.mk Makefile embodies the normal cmake workflow, making sure the build area is configured for a particular toolchain, compile is run after that, that tests are rebuilt and run after compiling, and so forth.
+* CMake Workflow driven by ~make~
+The Makefile embodies the normal cmake workflow, making sure the build area is configured for a particular toolchain, compile is run after that, that tests are rebuilt and run after compiling, and so forth.
 
 The Ninja multi-config generator is used, and several configs are created in the build area;
     - RelWithDebInfo
@@ -35,9 +33,11 @@ The default build is RelWithDebInfo. Other options are selected by the CONFIG pa
 make CONFIG=Asan
 #+end_src
 
+The Toolchain to use, the compiler and flags to use, is controlled by the TOOLCHAIN parameter.
+
 The top level Makefile is executable, and is symlinked as ~build~, so equivalently
 #+begin_src sh
-./build CONFIG=Asan
+./bld CONFIG=Asan TOOLCHAIN=clang-18
 #+end_src
 
 The build is done, by default, in ../cmake.bld/$(dirname)/build, controlled by the PROJECT variable.
@@ -49,14 +49,3 @@ A few git submodules I find useful are linked in.
 
 - https://github.com/google/googletest.git : Google test
 - https://github.com/mpark/wg21.git  : A system for writing papers for C++
-- git@github.com:steve-downey/docker-cxx-dev.git : The definition for the docker image that can be used for builds
-* Docker
-The workflow can be forwarded to a Docker image, instead of being built in the host system.
-
-The target ~use-docker~ enables this by creating the flag file .use-docker
-
-The base image can be created by using the definition in ~docker-inf/docker-cxx-dev/~ with the Makefile provided.
-
-The target ~docker-rebuild~ will create an image for this project, by default on the image ~steve-downey/cxx-dev:latest~ but can be overridden by setting BASE.
-
-The targets in ~targets.mk~ can run in either the host or in a docker container. The targets in Makefile either help build or control that image, or forward to targets.mk.

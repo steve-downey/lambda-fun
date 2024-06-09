@@ -140,6 +140,8 @@ M. Abadi, L. Cardelli, and G. D. Plotkin. Types for the scott numerals. Unpublis
 
 Koopman, Pieter, Rinus Plasmeijer, and Jan Martin Jansen. “Church Encoding of Data Types Considered Harmful for Implementations: Functional Pearl.” In Proceedings of the 26nd 2014 International Symposium on Implementation and Application of Functional Languages, 1–12. Boston MA USA: ACM, 2014. https://doi.org/10.1145/2746325.2746330.
 
+    Also at https://ifl2014.github.io/submissions/ifl2014_submission_13.pdf
+
 “Boehm-Berarducci Encoding.” Accessed June 9, 2024. https://okmij.org/ftp/tagless-final/course/Boehm-Berarducci.html.
 
 Jansen, Jan Martin, Rinus Plasmeijer, and Pieter Koopman. “Efficient Interpretation by Transforming Data Types and Patterns to Functions.” Grana, January 1, 2006. https://www.academia.edu/23370348/Efficient_interpretation_by_transforming_data_types_and_patterns_to_functions.

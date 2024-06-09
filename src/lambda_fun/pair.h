@@ -6,6 +6,9 @@
 
 namespace lambda_fun {
 
+auto constexpr inline Pair = [](auto f, auto s) { return [f,s](auto b){return b(f,s);}; };
+auto constexpr inline Fst = [](auto p) { return p(True); };
+auto constexpr inline Snd = [](auto p) { return p(False); };
 
 } // namespace lambda_fun
 

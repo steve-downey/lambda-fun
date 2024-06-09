@@ -1,10 +1,6 @@
-// lambda_fun.h                                                       -*-C++-*-
-#ifndef INCLUDED_LAMBDA_FUN
-#define INCLUDED_LAMBDA_FUN
-
-#include <memory>
-#include <variant>
-#include <vector>
+// lambda_fun/boolean.h                                               -*-C++-*-
+#ifndef INCLUDED_LAMBDA_FUN_BOOLEAN
+#define INCLUDED_LAMBDA_FUN_BOOLEAN
 
 namespace lambda_fun {
 
@@ -23,7 +19,8 @@ auto constexpr inline Not = [](auto x) {
     return [x](auto t, auto f) { return x(f, t); };
 };
 
-auto constexpr inline toBool = [](auto b) { return b(true, false); };
+auto constexpr inline toBool = [](auto b) { return b([]{return true;},
+                                                     []{return false;}); };
 
 } // namespace lambda_fun
 

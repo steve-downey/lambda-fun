@@ -3,7 +3,7 @@ add_library(lambda_fun STATIC "")
 target_sources(
   lambda_fun
   PRIVATE
-  lambda_fun.cpp)
+  boolean.cpp)
 
 include(GNUInstallDirs)
 
@@ -33,7 +33,7 @@ add_executable(lambda_fun_test "")
 target_sources(
   lambda_fun_test
   PRIVATE
-  lambda_fun.t.cpp)
+  boolean.t.cpp)
 
 target_link_libraries(lambda_fun_test lambda_fun)
 target_link_libraries(lambda_fun_test gtest)

@@ -49,3 +49,103 @@ A few git submodules I find useful are linked in.
 
 - https://github.com/google/googletest.git : Google test
 - https://github.com/mpark/wg21.git  : A system for writing papers for C++
+
+* References
+#+begin_src bibtex
+@misc{Programm13:online,
+author = {Jansen, Jan Martin},
+title = {Programming in the λ-Calculus: From Church to Scott and back},
+howpublished = {\url{https://www.researchgate.net/profile/Jan-Martin-Jansen/publication/267653413_Programming_in_the_l-Calculus_From_Church_to_Scott_and_Back/links/5c7249b292851c69503b0230/Programming-in-the-l-Calculus-From-Church-to-Scott-and-Back.pdf}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+
+@misc{ChurchSc94:online,
+author = {},
+title = {The Church-Scott representation of inductive and coinductive data},
+howpublished = {\url{http://www.cs.ru.nl/~herman/PUBS/ChurchScottDataTypes.pdf}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+
+@misc{BoehmBer24:online,
+author = {},
+title = {Beyond Church encoding: Boehm-Berarducci isomorphism of algebraic data types and polymorphic lambda-terms},
+howpublished = {\url{https://okmij.org/ftp/tagless-final/course/Boehm-Berarducci.html}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+
+@misc{scott2pd91:online,
+author = {},
+title = {scott2.pdf},
+howpublished = {\url{http://lucacardelli.name/Papers/Notes/scott2.pdf}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+
+@misc{ifl2014s1:online,
+author = {Jansen, Jan Martin},
+title = {ifl2014\_submission\_13.pdf},
+howpublished = {\url{https://ifl2014.github.io/submissions/ifl2014_submission_13.pdf}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+
+@misc{99Effici3:online,
+author = {Jan Martin Jansen},
+title = {(99+) Efficient interpretation by transforming data types and patterns to functions | Jan Martin Jansen, Pieter Koopman, and Rinus Plasmeijer - Academia.edu},
+howpublished = {\url{https://www.academia.edu/23370348/Efficient_interpretation_by_transforming_data_types_and_patterns_to_functions}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+
+@misc{KwangsHa62:online,
+author = {},
+title = {Kwang's Haskell Blog - Scott encoding of Algebraic Data Types},
+howpublished = {\url{https://kseo.github.io/posts/2016-12-13-scott-encoding.html}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+
+@misc{Mogensen4:online,
+author = {},
+title = {Mogensen–Scott encoding - Wikipedia},
+howpublished = {\url{https://en.wikipedia.org/wiki/Mogensen%E2%80%93Scott_encoding}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+
+@misc{Churchen8:online,
+author = {},
+title = {Church encoding - Wikipedia},
+howpublished = {\url{https://en.wikipedia.org/wiki/Church_encoding}},
+month = {},
+year = {},
+note = {(Accessed on 06/09/2024)}
+}
+#+end_src
+
+Jansen, Jan Martin. “Programming in the λ-Calculus: From Church to Scott and Back,” January 1, 2013. https://doi.org/10.1007/978-3-642-40355-2_12.
+
+M. Abadi, L. Cardelli, and G. D. Plotkin. Types for the scott numerals. Unpublished note, 1993. URL http://lucacardelli.name/Papers/Notes/scott2.pdf.
+
+Koopman, Pieter, Rinus Plasmeijer, and Jan Martin Jansen. “Church Encoding of Data Types Considered Harmful for Implementations: Functional Pearl.” In Proceedings of the 26nd 2014 International Symposium on Implementation and Application of Functional Languages, 1–12. Boston MA USA: ACM, 2014. https://doi.org/10.1145/2746325.2746330.
+
+“Boehm-Berarducci Encoding.” Accessed June 9, 2024. https://okmij.org/ftp/tagless-final/course/Boehm-Berarducci.html.
+
+Jansen, Jan Martin, Rinus Plasmeijer, and Pieter Koopman. “Efficient Interpretation by Transforming Data Types and Patterns to Functions.” Grana, January 1, 2006. https://www.academia.edu/23370348/Efficient_interpretation_by_transforming_data_types_and_patterns_to_functions.
+
+“Kwang’s Haskell Blog - Scott Encoding of Algebraic Data Types.” Accessed June 9, 2024. https://kseo.github.io/posts/2016-12-13-scott-encoding.html.
+
+“Mogensen–Scott Encoding.” In Wikipedia, April 3, 2024. https://en.wikipedia.org/w/index.php?title=Mogensen%E2%80%93Scott_encoding&oldid=1217059412.
+
+“Church Encoding.” In Wikipedia, May 25, 2024. https://en.wikipedia.org/w/index.php?title=Church_encoding&oldid=1225579308.

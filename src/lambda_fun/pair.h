@@ -10,6 +10,7 @@ auto constexpr inline Pair = [](auto f, auto s) { return [f,s](auto b){return b(
 auto constexpr inline Fst = [](auto p) { return p(True); };
 auto constexpr inline Snd = [](auto p) { return p(False); };
 
+auto constexpr inline Swap = [](auto p){return Pair(Snd(p), Fst(p));};
 } // namespace lambda_fun
 
 #endif
